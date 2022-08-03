@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.fbic {
+    background-image: url("images/icon-facebook.svg");
+    width: 20px;
+    height: 20px;
+}
+.twic {
+    background-image: url("images/icon-twitter.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.igic {
+    background-image: url("images/icon-instagram.svg");
+    width: 20px;
+    height: 20px;
+}
+.ytic {
+    background-image: url("images/icon-youtube.svg");
+    width: 20px;
+    height: 20px;
+}
+.chevup {
+    background-image: url("images/icon-up.svg");
+    width: 8px;
+    height: 4px;
+    display: inline-block;
+}
+.chevdown {
+    background-image: url("images/icon-down.svg");
+    width: 8px;
+    height: 4px;
+    display: inline-block;
+}
+
+
+.fb {
+    border-top: 4px solid #178FF5;
+}
+.tw {
+    border-top: 4px solid #1DA1F2;
+}
+.ig {
+    border-top: 4px solid #EE877E;
+}
+.yt {
+    border-top: 4px solid #C4032B;
+}
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10vw;
+}
+.title {
+    margin-left: 10vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.title h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+.title p {
+    font-size: 0.75em;
+    font-weight: 700;
+}
+.title span {
+    font-size: 1em
+}
+
+nav .dark {
+    display: flex;
+    align-items: center;
+}
+.dark p {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.527);
+    padding-top: 4px;
+    margin-right: 10px;
+}
+.toggle {
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 48px;
+    height: 24px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.toggle .circle {
+    height: 18px;
+    width: 18px;
+    border-radius: 50px;
+    background-color: white;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+
+
+
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 10px;
+}
+.total .card {
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+.total .card .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.total .card .user p {
+    font-size: 0.72em;
+    font-weight: 700;
+    margin-left: 5px;
+    letter-spacing: 0.5px;
+}
+.total .card h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+.total .card .sub {
+    font-size: 0.7em;
+    letter-spacing: 4px;
+    margin-bottom: 27px;
+}
+
+.total .change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total .change p {
+    margin-left: 5px;
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+
+
+
+
+.overview {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+.overview h1 {
+    margin-left: 10vw;
+}
+.overview .container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 10px;
+}
+.overview .minicard {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 10px;
+    margin-left: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+.minicard p {
+    font-size: 0.7em;
+    margin: 20px;
+}
+.minicard .icon {
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+.minicard h2 {
+    margin: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+}
+.minicard .change {
+    justify-self: end;
+    margin: 20px;
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+.minicard .value {
+    display: flex;
+    align-items: center;
+    font-size: 0.75em;
+    font-weight: 700;
+    justify-content: end;
+}
+.value div {
+    margin-right: 5px;
+}
+.overview .couple {
+    width: 20vw;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .total {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .overview .container {
+        flex-direction: column;
+    }
+    .container .couple {
+        align-self: center;
+        width: 100%;
+    }
+}
+
+
+.darkmode {
+    color: white;
+}
+.dark .darkmode {
+    color: white;
+}
+.darkmodebg {
+    background-color: black;
+}
+.darkmodecards {
+    background-color: #f1f3fa57;
+    color: white;
+}
+.lightmodecards {
+    background-color: #F1F3FA;
+}
+.lighton {
+    justify-content: end;
+}
+.darkon {
+    justify-content: start;
+}
+.darkToggle {
+    background-color: rgba(255, 255, 255, 0.36)
+}
